@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: Montserrat ;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+
+   min-height: 100vh;
+   width: 100%;
+   background-color: #040023;;
+   position: relative;
+   padding: 0 2vw;
+}
+
+nav{
+    padding: 2vw 3vw;
+    width: 100%;
+    background-color: #040023;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img.logo {
+    width: 120px;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.nav-part2 h4{
+    padding: 8px 15px;
+    border: 1.8px solid #d09d5f;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 17px;
+    color: aliceblue;
+    transition: all ease 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #d09d5f;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.nav-part2 h4 a{
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+.nav-part2 h4:hover a{
+    color: #060606;
+}
+.center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid aliceblue;
+    padding: 2vw;
+
+}
+.left{
+    z-index: 80;
+}
+.right{
+    width: 38vw;
+    font-size: 1.5vw; 
+}
+
+.center h1{
+    /* margin-top: -25vw; */
+    font-size: 8vw;
+    font-weight: 600;
+    color: aliceblue;
+    line-height: 9vw;
+}
+.center h5{
+    line-height: 2vw;
+    font-size: 1.8vw;
+    font-weight: 300;
+    color: #d09d5f;
+    text-align: right;
+}
+.hero-shape{
+    z-index: 0;
+    position: absolute;
+    width: 36vw;
+    height: 26vw;
+   
+    left: 0;
+    top: 55vh;
+}
+
+.hero-1{
+    
+    background-color: #e49f37;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+.hero-2{
+    
+    background-color: #eeaf50;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.hero-3{
+    
+    background:linear-gradient(#e49f37,#d09d5f) ;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1{
+    from{
+        transform: translate(-10%,7%);
+    }
+    to{
+        transform: translate(5%,-14%);
+    }
+}
+@keyframes anime2{
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translate(10%,-20%);
+    }
+}
+
+.vision{
+    /* z-index: 100; */
+    width:60%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+}
+.vision h3{
+    padding: 2vw;
+    color: #d09d5f;
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
+.vision p{
+    
+    line-height: 2vw;
+    font-size: 1.2vw;
+    /* font-weight: 700; */
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.page2{
+    padding: 4vw 0 0 0;
+    min-height: 50vh;
+    width: 100%;
+    background-color: #d09d5f;
+}
+.moving-text{
+    padding-bottom: 2.5vw;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.moving-text h1{
+    font-size: 7vw;
+    color: aliceblue;
+    display: inline-block;
+}
+.gola{
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #040023;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom{
+    height: 90vh;
+    width: 100%;
+    background-color: #040023;
+    padding: 0 4vw 0 4vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.page2-bottom h3{
+    width: 30%;
+    font-weight: 400;
+    font-size: 1.8vw;
+    color: #d09d5f;
+}
+
+.bottom-part2{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-flow: row;
+    gap: 20px;
+}
+.bottom-part2-card h2{
+    font-size: 1.2vw;
+    color: #d09d5f;
+    padding-top: 10px;
+}
+.bottom-part2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.bottom-part2 p{
+    margin-top: 1vw;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.page3{
+    height: 100vh;
+    width: 80%;
+}
+
+.footer{
+    background-image: url(https://www.ecellrgpv.com/assets/img/footer-02.jpg) ;
+    
+  }
+  .footer .box-container{
+    padding: 3vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    flex-wrap: wrap;
+   
+  }
+  
+  .footer .box-container .box h3{
+    color:#d09d5f;
+    font-size: 2vw;
+    /* padding: 11px 0; */
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2vw;
+    line-height: 5vh;
+   
+  }
+  
+  .footer .box-container .box a:hover{
+    color: #d09d5f;
+    text-decoration: underline;
+  }
+  
+ 
+  
+  .footer .credit{
+    text-align: center;
+    
+    padding-top: 18px;
+    font-size: 1.2vw;
+    color:#d09d5f;
+    
+    padding-bottom: 15px;
+  }
+  
+  .footer .credit span{
+    color: aliceblue;
+  }
