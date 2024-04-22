@@ -28,7 +28,8 @@ nav{
     justify-content: space-between;
 }
 img.logo {
-    width: 120px;
+    width: 14vh;
+    height: 7vh;
 }
 .nav-part2{
     display: flex;
@@ -38,11 +39,11 @@ img.logo {
 }
 
 .nav-part2 h4{
-    padding: 8px 15px;
+    padding: .5vw 1vw;
     border: 1.8px solid #d09d5f;
     border-radius: 50px;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1vw;
     color: aliceblue;
     transition: all ease 0.4s;
     position: relative;
@@ -231,8 +232,8 @@ img.logo {
     display: inline-block;
 }
 .gola{
-    height:60px;
-    width: 60px;
+    height:4vw;
+    width: 4vw;
     border-radius: 50%;
     background-color: #040023;
     display: inline-block;
@@ -342,3 +343,85 @@ img.logo {
   .footer .credit span{
     color: aliceblue;
   }
+
+
+@media (max-width:600px) {
+    .page1{
+        min-height: 80vh;
+    }
+    .img .logo{
+        width: 8vh;
+        height: 4vh;
+    }
+    .center{
+        width: 100%;
+        height: 40vh;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    .left{
+        width: auto;
+    }
+    .center h5{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .hero-shape{
+        width: 30vw;
+        height: 20vw;
+        top: 17vh;
+    }
+    
+    .vision h3{
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+    .vision p{
+        
+        align-items: center;
+        font-size: 2vw;
+        line-height: 3vw;
+        font-weight: 200;
+    }
+    .page2-bottom{
+        height: 120vh;
+        padding: 5vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .page2-bottom h3{
+        width: 100%;
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 5vw;
+        text-align: center;
+        padding: 0 7vw 0 7vw;
+    }
+
+    /* .page2-bottom{
+        overflow: hidden;
+    } */
+    .bottom-part2{
+        margin: 4vw;
+        padding: 2vw 5vw 2vw 5vw;
+        width: 90%;
+        display: grid;
+    }
+    .bottom-part2 img{
+        padding: 0 3vw 0 3vw;
+        border-radius: 29px;
+        width: 70%;
+        height: 15vh;
+    }
+    .bottom-part2-card h2{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .bottom-part2 p{
+        font-size: 2vw;
+    }
+}
